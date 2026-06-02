@@ -1,0 +1,102 @@
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css";
+
+@import "nativewind/theme";
+
+/* ─── Design Tokens ──────────────────────────────────────────────────────── */
+@theme {
+  /* Primary Brand Colors */
+  --color-primary: #6c4ef5;
+  --color-primary-deep: #5b3bf6;
+  --color-lingua-blue: #4d8bff;
+  --color-lingua-green: #21c16b;
+
+  /* Semantic Colors */
+  --color-success: #21c16b;
+  --color-warning: #ffc800;
+  --color-streak: #ff8a00;
+  --color-error: #ff4d4f;
+  --color-info: #4d8bff;
+
+  /* Neutrals */
+  --color-ink: #0d132b;
+  --color-muted: #6b7280;
+  --color-border: #e5e7eb;
+  --color-surface: #f6f7fb;
+  --color-background: #ffffff;
+
+  /* Font Families — separate files per weight for React Native */
+  --font-family-sans: "Poppins-Regular";
+  --font-family-poppins: "Poppins-Regular";
+  --font-family-poppins-medium: "Poppins-Medium";
+  --font-family-poppins-semibold: "Poppins-SemiBold";
+  --font-family-poppins-bold: "Poppins-Bold";
+}
+
+/* ─── Typography Scale (BEM: type--<variant>) ───────────────────────────── */
+@layer utilities {
+  /* H1 — Page / Screen Title | 32px Bold 1.2 */
+  .type--h1 {
+    font-family: "Poppins-Bold";
+    font-size: 32px;
+    line-height: 38px;
+    color: #0d132b;
+  }
+
+  /* H2 — Section Title | 24px SemiBold 1.3 */
+  .type--h2 {
+    font-family: "Poppins-SemiBold";
+    font-size: 24px;
+    line-height: 31px;
+    color: #0d132b;
+  }
+
+  /* H3 — Card / Module Title | 20px SemiBold 1.3 */
+  .type--h3 {
+    font-family: "Poppins-SemiBold";
+    font-size: 20px;
+    line-height: 26px;
+    color: #0d132b;
+  }
+
+  /* H4 — Subheading | 16px Medium 1.4 */
+  .type--h4 {
+    font-family: "Poppins-Medium";
+    font-size: 16px;
+    line-height: 22px;
+    color: #0d132b;
+  }
+
+  /* Body Large — Important content | 16px Regular 1.6 */
+  .type--body-lg {
+    font-family: "Poppins-Regular";
+    font-size: 16px;
+    line-height: 26px;
+    color: #0d132b;
+  }
+
+  /* Body Medium — Body text | 14px Regular 1.6 */
+  .type--body-md {
+    font-family: "Poppins-Regular";
+    font-size: 14px;
+    line-height: 22px;
+    color: #0d132b;
+  }
+
+  /* Body Small — Supporting text | 13px Regular 1.6 */
+  .type--body-sm {
+    font-family: "Poppins-Regular";
+    font-size: 13px;
+    line-height: 21px;
+    color: #0d132b;
+  }
+
+  /* Caption — Labels, meta text | 11px Regular 1.4 */
+  .type--caption {
+    font-family: "Poppins-Regular";
+    font-size: 11px;
+    line-height: 15px;
+    color: #6b7280;
+  }
+}
